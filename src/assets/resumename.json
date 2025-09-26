@@ -1,0 +1,422 @@
+{
+  "name": "Caspian Tyler",
+  "meta": {
+    "format": "FRESH@0.6.0",
+    "version": "0.1.0"
+  },
+  "info": {
+    "label": "Game Developer",
+    "brief": "I am a game developer with a passion for problem solving and working with computers. I've released three games in Unity and Godot using C#, including multiplayer, 2D puzzle, and arcade style games. I have also developed a media converter to enable the user to watch videos in vanilla Minecraft. Some of my favorite games are Jedi: Survivor, Portal, and Redout 2.",
+    "image": ""
+  },
+  "contact": {
+    "website": "https://treadthedawn.games/",
+    "phone": "513-546-2465",
+    "email": "caspian@tylerinternet.com",
+    "other": []
+  },
+  "location": {
+    "address": "13531 Crashaw Road",
+    "city": "Jacksonville",
+    "region": "Florida",
+    "code": "32246",
+    "country": "US"
+  },
+  "social": [
+    {
+      "label": "",
+      "network": "GitHub",
+      "user": "TreadTheDawnGames",
+      "url": "https://github.com/TreadTheDawnGames"
+    },
+    {
+      "label": "Itch.io",
+      "network": "Itch.io",
+      "user": "Tread the Dawn Games",
+      "url": "https://treadthedawngames.itch.io/"
+    },
+    {
+      "label": "",
+      "network": "LinkedIn",
+      "user": "Caspian Tyler",
+      "url": "https://www.linkedin.com/in/caspian-tyler/"
+    }
+  ],
+  "employment": {
+    "summary": "",
+    "history": [
+      {
+        "employer": "Two Robots Studios",
+        "url": "https://tworobots.com/",
+        "position": "Balance and Testing Engineer",
+        "summary": "Assist in balancing and testing Two Robots Unleashed, Two Robots Studios flagship title.",
+        "start": "2025-8",
+        "end": "2025-8",
+        "keywords": [
+          "Tester",
+          "Design",
+          "Playtest"
+        ],
+        "highlights": [
+          "Collaborated with the Lead Game Designer to design and test faction abilities.",
+          "Provided ongoing feedback on other aspects of the game including core game mechanic systems.",
+          "Recorded and supplied assessments of playtest sessions."
+        ]
+      },
+      {
+        "employer": "Tread the Dawn Games",
+        "url": "https://github.com/TreadTheDawnGames",
+        "position": "Game Developer",
+        "summary": "Designed and developed games systems using Godot and Unity.",
+        "start": "2023-8",
+        "keywords": [
+          "Game Design",
+          "Godot",
+          "Unity",
+          "C#",
+          "GDScript",
+          "Multiplayer"
+        ],
+        "highlights": [
+          "[MoonSpire](https://store.steampowered.com/app/3509090/MoonSpire/): A short 2D puzzle platformer with rage-game elements.\n  - Made use of a community-generated library to persist user settings and game state between sessions.\n  - Created a state machine to run enemies, an interface to create a scaleable tool system and polymorphism to make a multipurpose lock and door system for puzzles and the boss.\n  - Original sprites created using Aseprite.",
+          "[Heavens Ablaze](https://treadthedawngames.github.io/): A peer to peer multiplayer physics based spaceship simulator.\n  - Developed systems to display a holographic depiction of the damage state of the pilot's ship and track enemies across their HUD.\n  - Utilized the Unity Asset Store.\n  - Shipped in 6 months."
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "SOL",
+      "category": "Game Jam Entry",
+      "url": "https://treadthedawngames.itch.io/sol",
+      "repo": "https://github.com/TreadTheDawnGames/GMTK2025-Sol",
+      "media": [],
+      "role": "Creator, Game Designer, Systems Programmer",
+      "summary": "Originally created in 96 hours, collaborated with two other developer/designers to create an arcade physics game about looping planets to gain as many points as you can using GDScript, Godot, and Open Source Art assets.",
+      "start": "2025-8",
+      "end": "2025-8",
+      "description": "An entry to GMTK Game Jam 2024: Built to Scale.",
+      "highlights": [
+        "Scored top 16% in 'Enjoyment'",
+        "Designed Gameplay",
+        "Implimented Shaders",
+        "Provided post-jam updates to polish",
+        "Optomized/refactored collaborators' code"
+      ],
+      "keywords": [
+        "Godot",
+        "Game Jam",
+        "GMTK",
+        "GDScript"
+      ]
+    },
+    {
+      "title": "Babel or Bacon",
+      "category": "Game Jam Entry",
+      "url": "https://treadthedawngames.itch.io/babel-or-bacon",
+      "repo": "https://github.com/TreadTheDawnGames/GMTK2024-BabelOrBacon",
+      "media": [],
+      "role": "Creator, Game Designer, Systems Programmer",
+      "summary": "Originally created in 96 hours, collaborated with one other developer/designer to create a deck building, tower construction arcade game for GMTK Game Jam 2024: Built to Scale using C# and Godot.",
+      "description": "An entry to GMTK Game Jam 2024: Built to Scale.",
+      "highlights": [
+        "Used collections of various types to manage the deck and player hand and built-in physics to stick objects together for the Glue feature.",
+        "Created a launcher for easy updates.",
+        "Ranked in top 50% of 7,597 entries."
+      ],
+      "start": "2024-8",
+      "end": "2024-8",
+      "keywords": [
+        "Godot",
+        "Game Jam",
+        "GMTK",
+        "C#"
+      ]
+    },
+    {
+      "title": "Open Source: Chronos Pointer - RimWorld Mod",
+      "category": "Personal Project",
+      "url": "https://github.com/coolnether123/ChronosPointer",
+      "media": [],
+      "role": "Creator, Maintainer",
+      "start": "2025-1",
+      "summary": "A mod to enhance the schedule panel with dynamic time indicators for improved colony management and time tracking.",
+      "highlights": [
+        "20,000+ current users/subscribers.",
+        "Implimented mod settings.",
+        "Ensured compatibility with official DLC and major update 1.6."
+      ],
+      "keywords": [
+        "C#",
+        "Reading source code"
+      ]
+    },
+    {
+      "title": "Open Source: XenoPreview - RimWorld Mod",
+      "category": "Personal Project",
+      "url": "https://github.com/coolnether123/XenoPreview",
+      "media": [],
+      "role": "Maintainer",
+      "start": "2025-7",
+      "summary": "A mod which shows a preview of your custom Xenotypes as you create them.",
+      "highlights": [
+        "Refactored the preview window to spawn in a way that works better within the RimWorld codebase.",
+        "Added feature: draggable window.",
+        "Ensured compatibility with RimWorld 1.6.",
+        "Ensured compatibility with other mod: Xenotype and Ideology Buttons TitleScreen"
+      ],
+      "keywords": [
+        "C#",
+        "Reading source code"
+      ]
+    },
+    {
+      "title": "Open Source: Pawn Editor - RimWorld Mod",
+      "category": "Personal Project",
+      "url": "https://github.com/ISOR3X/pawn-editor/pull/114",
+      "media": [],
+      "role": "Contributor",
+      "start": "2025-1",
+      "end": "2025-1",
+      "summary": "Added Random Faction options when selecting a pawn's faction, each appearing when its context is relevant.",
+      "highlights": [
+        "Added functionality to select a random faction for a pawn based on various filters.",
+        "Fixed a bug where the UI wasn't updating when a starting item was deleted.",
+        "Made Starting Items visible on faction items screen.",
+        "Assisted in ensuring compatibility to 1.6."
+      ],
+      "keywords": [
+        "C#",
+        "Reading source code"
+      ]
+    },
+    {
+      "title": "Open Source: Zetrith’s Multiplayer - RimWorld Mod",
+      "category": "Personal Project",
+      "url": "https://github.com/rwmt/Multiplayer/pull/688",
+      "media": [],
+      "role": "Contributor",
+      "start": "2025-9",
+      "end": "2025-9",
+      "summary": "Added a window that shows current known issues to the user the first time they open the Server Explorer.",
+      "highlights": [
+        "Multi-language support.",
+        "Never show again button.",
+        "Allows an arbitrary number of known issues."
+      ],
+      "keywords": [
+        "C#",
+        "Reading source code"
+      ]
+    },
+    {
+      "title": "The Cordova Expedition",
+      "category": "Game Jam Entry",
+      "url": "https://treadthedawnexplorations.itch.io/the-cordova-expedition",
+      "repo": "https://github.com/TreadTheDawnGames/GodotWildJam81-TheCordovaExpedition",
+      "media": [],
+      "start": "2025-5",
+      "end": "2025-5",
+      "role": "Creator, Game Designer, Systems Programmer",
+      "summary": "Originally created in 9 days, collaborated with four other developer/designers/artists to create an arcade a shoot-em-up sidescroller inspired by FTL using GDScript, Godot.",
+      "description": "An entry to Godot Wild Jam #81: Expedition.",
+      "highlights": [
+        "Designed and programmed the shop system",
+        "Created a tilemap based system for ship construction",
+        "Made procedural level system using map system created by another developer"
+      ],
+      "keywords": [
+        "Godot",
+        "Game Jam",
+        "GDScript"
+      ]
+    },
+    {
+      "title": "V2MC (Video to Minecraft Datapack)",
+      "category": "Personal Project",
+      "url": "https://github.com/treadthedawngames/v2mc",
+      "media": [],
+      "role": "Sole Creator",
+      "start": "2025-10",
+      "end": "2025-3",
+      "summary": "A tool which converts videos to the resources required to watch it in Minecraft 1.20.4. It is multiplayer friendly so you can watch with friends! Made with WinForms and C#.",
+      "description": "A Library with a Command Line utility and WinForms app using C#, FFMpeg/FFProbe, ImageMagick, and a blueprint of a Minecraft datapack to convert video files to resources allowing it to be watched as a movie in multiplayer Minecraft without mods.",
+      "highlights": [
+        "Utilized FFMpeg/FFProbe and ImageMagick libraries to show a preview of output.",
+        "Audio in game automatically resyncs to video if server lag causes a desync.",
+        "Used the I/O file system to automatically install the output to the proper place in the Minecraft directories."
+      ],
+      "keywords": [
+        "Vanilla",
+        "Minecraft",
+        "Command Line Utility",
+        "FFmpeg",
+        "FFprobe",
+        "C#",
+        "WinForms"
+      ]
+    },
+    {
+      "title": "Audio Maze",
+      "category": "Game Jam Entry",
+      "url": "https://treadthedawnexplorations.itch.io/audio-maze",
+      "media": [],
+      "role": "Sole Creator",
+      "start": "2025-6",
+      "end": "2025-6",
+      "summary": "Originally created in 4 hours, created an echolocation simulator using GDScript, Godot.",
+      "description": "An entry to Godot Wild Jam #82: Unseen.",
+      "highlights": [
+        "3D Audio",
+        "Time crunch"
+      ],
+      "keywords": [
+        "Godot",
+        "Game Jam",
+        "GDScript"
+      ]
+    },
+    {
+      "title": "Prototype: Rogue Souls",
+      "category": "Personal Project",
+      "url": "https://github.com/TreadTheDawnGames/RogueSouls",
+      "media": [],
+      "role": "Sole Creator",
+      "start": "2024-11",
+      "end": "2024-11",
+      "summary": "Built on past experience in C# and Godot to create a prototype of a moddable, fixed-perspective, run-based dungeon crawler.",
+      "description": "",
+      "highlights": [
+        "Created data-driven Actions to allow for many different behaviors with a tweak of a few variables."
+      ],
+      "keywords": [
+        "C#",
+        "Godot"
+      ]
+    },
+    {
+      "title": "Prototype: Dungeons and Decks",
+      "category": "Personal Project",
+      "url": "https://github.com/TreadTheDawnGames/ScoundrelCardGame",
+      "media": [],
+      "role": "Sole Creator",
+      "start": "2025-3",
+      "end": "2025-8",
+      "summary": "A Balatro-inspired game based on the solitaire card game, Scoundrel.",
+      "highlights": [
+        "Translated C# card system made for Babel or Bacon into GDScript.",
+        "Expanded said card system to include callbacks for ease of use in other projects."
+      ],
+      "keywords": [
+        "C#",
+        "Godot"
+      ]
+    },
+    {
+      "title": "Prototype: Rimguistics - RimWorld Mod",
+      "category": "Personal Project",
+      "url": "https://github.com/TreadTheDawnGames/Rimguistics",
+      "media": [],
+      "start": "2025-2",
+      "end": "2025-2",
+      "role": "Creator",
+      "summary": "A RimWorld mod to add languages to pawn's interactions.",
+      "highlights": [
+        "Utilized Harmony to create a system which interrupts pawns' interactions, making them fail unless they share a language.",
+        "Created custom-named languages using built-in RimWorld logic.",
+        "Made pawns unable to trade unless they share a language."
+      ],
+      "keywords": [
+        "C#",
+        "Reading source code"
+      ]
+    }
+  ],
+  "skills": {
+    "sets": [
+      {
+        "name": "Technologies",
+        "level": "intermediate",
+        "skills": [
+          "C#",
+          "GDScript",
+          "Git/GitFlow",
+          "FFMpeg",
+          "FFMprobe",
+          "WinForms"
+        ]
+      },
+      {
+        "name": "Software",
+        "level": "intermediate",
+        "skills": [
+          "Gogot",
+          "Unity",
+          "Aseprite",
+          "Gimp",
+          "Audacity",
+          "Extended Reality"
+        ]
+      }
+    ],
+    "list": []
+  },
+  "recognition": [
+    {
+      "flavor": "dance",
+      "from": "An Coimisiún le Rincí Gaelacha (The Irish Dance Commission)",
+      "title": "5x World Qualified Irish Dancer",
+      "event": "CLRG Southern Region Oireachtas, CLRG North American Irish Dancd Championship",
+      "summary": "NAIDC 8th (2023), 7th (2025); SRO 3rd (2021), 3rd (2022), 3rd (2023)"
+    }
+  ],
+  "references": [
+    {
+      "name": "Patty Darrah",
+      "category": "professional",
+      "role": "Dance Instructor",
+      "private": true,
+      "summary": "Contact information available on request.",
+      "contact": [
+        {
+          "flavor": "cell",
+          "value": "314-452-9257"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "level": "native"
+    },
+    {
+      "language": "C#",
+      "level": "intermediate"
+    },
+    {
+      "language": "GDScript",
+      "level": "intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "RimWorld Modding",
+      "summary": "I love creating mods with a buddy of mine. We've made two together so far!",
+      "keywords": [
+        "GitHub",
+        "Collaboration",
+        "Decompiling Source Code"
+      ]
+    },
+    {
+      "name": "Irish Dance",
+      "summary": "Irish Dance is how I stay fit. Not only is it healthy, it's fun!",
+      "keywords": [
+        "Hard Work",
+        "Commitment",
+        "Cut 2 3"
+      ]
+    }
+  ]
+}

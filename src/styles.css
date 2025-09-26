@@ -1,1 +1,152 @@
 /* You can add global styles to this file, and also import other style files */
+  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+  /* @font-face {
+        font-family: "Pixel";
+        src: url(./TreadTheDawnPixL.ttf);
+      } */
+  img.returntohome {
+    width: 100px;
+  }
+  .title {
+    padding: 1em;
+    background: #ff4d14;
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    justify-self: center;    
+  }
+  .barThing {
+    font-size: 0.8em;
+    background: #005c6a;
+    color: white;
+    padding: 0.5em;
+    padding-left: 1em;
+    justify-self: center;
+    width: 100%;
+  }
+  .barItem {
+    display: inline-block;
+    margin: 0.125em;
+    /* margin-bottom: 0.25em */
+  }
+  .barButton {
+    display: block;
+    padding: 0.25em;
+    background-color: transparent;
+    border: 0.1em, solid, white;
+    font-family: Pixel, sans-serif;
+    color: black;
+    border-radius: 0.25em;
+    text-decoration: none;
+    background-color: white;
+  }
+  .barButton:hover {
+    background-color: #00464f;
+    border: 0.1em, solid, white;
+    font-family: Pixel, sans-serif;
+    color: white;
+    border-radius: 0.25em;
+  }
+  .barButton:active {
+    border: 0.1em, solid, #00464f;
+    font-family: Pixel, sans-serif;
+    color: black;
+    border-radius: 0.25em;
+  }
+  .blackIcon {
+    width: 2em;
+    margin-right: 0.5em;
+    text-decoration: none;
+  }
+  h1 {
+    transform: translateX(-1.5px) translateY(-1.5px);
+  }
+  h2 {
+    transform: translateX(-1.5px) translateY(-1.5px);
+  }
+  .ProjectTitle {
+    text-decoration: none;
+    color: black;
+  }
+  .footer {
+    padding: 1em;
+    text-align: left;
+    background: #005c6a;
+    color: white;
+    font-size: 1em;
+    width:100%;
+    justify-self: center;
+  }
+
+  .horizontalList {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+  @media (max-width: 750px) {
+    .tableImage {
+      display: none;
+    }
+  }
+
+  @media print {
+    .no-print,
+    .no-print * {
+      display: none !important;
+    }
+
+    .print-only,
+    .print-only * {
+      display: block;
+    }
+    body {
+      font-size: 75%;
+    }
+    .AboutMeDiv {
+      margin-left: 2em;
+      text-align: left;
+    }
+
+    .resume-div {
+      margin: 1em;
+      margin-left: auto;
+      text-align: left;
+      width: 100%;
+    }
+
+    .centerOnPage {
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: auto;
+     max-width: 100%;
+    }
+
+  }
+
+  @media screen {
+    .print-only,
+    .print-only * {
+      display: none;
+    }
+    .AboutMeDiv {
+      margin: auto;
+      text-align: center;
+      width: 75%;
+    }
+    .ResumeDiv {
+      margin: auto;
+      text-align: left;
+      width: 75%;
+    }
+
+    .centerOnPage {
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: auto;
+     max-width: 75%;
+    }
+  }
