@@ -1,8 +1,11 @@
 import {Component} from '@angular/core';
+import { Injectable } from '@angular/core';
+
 import {bootstrapApplication} from '@angular/platform-browser';
 import data from '../src/assets/resumename.json';
-import {marked} from 'marked';
+import {marked, Renderer} from 'marked';
 import { compileClassDebugInfo } from '@angular/compiler';
+
 
 @Component({
   selector: 'app-header',
@@ -172,6 +175,7 @@ export class Employment{
   parseMarkdown(s: string) {
     s = s.replace("<p>", "")
     s = s.replace("</p>", "")
+
     if(s.includes(" - "))
       return marked.parse(s)
     else
@@ -231,6 +235,7 @@ export class Projects {
     s = s.replace("</p>", "")
     return marked.parseInline(s)
   }
+
 }
 
 @Component({
