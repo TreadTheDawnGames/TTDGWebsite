@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {bootstrapApplication} from '@angular/platform-browser';
 import data from '../src/assets/resumename.json';
 import {marked} from 'marked';
+import { compileClassDebugInfo } from '@angular/compiler';
 
 @Component({
   selector: 'app-header',
@@ -147,67 +148,112 @@ export class AboutMe{}
 @Component({
   selector: 'employment',
   template: `
+  <div>
     <h2>Professional Experience</h2>
+    
     @for(job of employment; track job){
-      <h3>
-      <a href="{{job.url}}" target="_blank" class="ProjectTitle bi bi-link">{{job.employer}}</a>
-      </h3>
-      
-      <h4>{{job.position}}</h4>
-      <p>
-      {{job.summary}}
-      <ul>
-        @for(h of job.highlights; track h){
-          <li [innerHTML]="parseMarkdown(h)"></li>
+      <div style="break-inside: avoid;">
+        <h3>
+          <a href="{{job.url}}" target="_blank" class="ProjectTitle bi bi-link">{{job.employer}}</a>
+        </h3>
+
+        <h4><i [innerHTML]="parseMarkdown(job.position)"></i></h4>
+        <p [innerHTML]="parseMarkdown(job.summary)"></p>
+        <ul>
+          @for(h of job.highlights; track h){
+            <li [innerHTML]="parseMarkdown(h)"></li>
           }
-      </ul>
-      <p>------------------------------------------------------------------</p>
-      }
+        </ul>
+        <hr/>
+      </div>
+    }
+  </div>
   `,
 })
 export class Employment{
   employment = data.employment.history
   
   parseMarkdown(s: string) {
-    return marked.parse(s)
+    s = s.replace("<p>", "")
+    s = s.replace("</p>", "")
+    if(s.includes(" - "))
+      return marked.parse(s)
+    else
+      return marked.parseInline(s)
   }
 }
 
 @Component({
   selector:'app-projects',
   template: `
+  <div>
       <h2>Projects</h2>
 
   @for(project of projects; track project){
-<h5>
-  <i class="bi bi-link">
-    <a href={{project.url}} target="_blank" class="ProjectTitle">{{project.title}} - {{project.start}}</a>
-  </i>
-</h5>
-<p>{{project.role}}</p>
-{{project.summary}}
-<ul>
-@for (h of project.highlights; track h){
-  <li><p>{{h}}</p></li>
-}
-</ul>
+  <div style="break-inside: avoid;">
+    <h3>
+      <i class="bi bi-link">
+        <a href={{project.url}} target="_blank" class="ProjectTitle">{{project.title}} - {{project.start}}</a>
+      </i>
+    </h3>
 
-@for (k of project.keywords; track k){
-{{k}}
+    <h4><i [innerHTML]="parseMarkdown(project.role)"></i></h4>
+    <p [innerHTML]="parseMarkdown(project.summary)"></p>
+
+    <ul>
+      @for (h of project.highlights; track h){
+        <li [innerHTML]="parseMarkdown(h)"></li>
+      }
+    </ul>
+
+<p style="font-size:0.75em;">
+{{createKeywords(project.keywords)}}
+</p>
+<hr/>
+</div>
 }
-<p>------------------------------------------------------------------</p>
-}
+</div>
   `,
 })
-export class Projects {projects = data.projects
+export class Projects {
+  projects = data.projects
 
-  
+  createKeywords(keywords : string[]): string {
+    let s : string = ""
+
+    for(let i = 0; i < keywords.length; i++){
+      s += keywords[i]
+      if(i < keywords.length-1){
+        s+=", "
+      }
+
+    }
+    return s
+  }
+  parseMarkdown(s: string) {
+    s = s.replace("<p>", "")
+    s = s.replace("</p>", "")
+    return marked.parseInline(s)
+  }
 }
 
+@Component({
+  selector: 'app-footer',
+  template: `
+  <br/>
+<br/>
+<br/>
+<br/>
+<div class="footer no-print">
+  <a href="#" style="text-decoration: none; color: white;">Back to top ^^^</a>
+</div>
+`
+})
+export class Footer{}
 
 @Component({
   selector: 'app-root',
-  imports: [Header, ProjectsNavBar, AboutMe, Employment, Projects],
+  imports: [Header, ProjectsNavBar, AboutMe, Employment, Projects, Footer],
   template: `
     <app-header/>
     <proj-nav-bar/>
@@ -216,13 +262,7 @@ export class Projects {projects = data.projects
       <employment/>
       <app-projects/>
     </div>
-<br/>
-<br/>
-<br/>
-<br/>
-<div class="footer no-print">
-  <a href="#" style="text-decoration: none; color: white;">Back to top ^^^</a>
-</div>
+    <app-footer class="no-print"></app-footer>
   `,
 })
 export class Page {}
