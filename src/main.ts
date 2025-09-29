@@ -5,6 +5,7 @@ import {bootstrapApplication} from '@angular/platform-browser';
 import data from '../src/assets/resumename.json';
 import {marked, Renderer} from 'marked';
 import { compileClassDebugInfo } from '@angular/compiler';
+import { Title } from '@angular/platform-browser';
 
 
 @Component({
@@ -286,8 +287,51 @@ export class Projects {
 export class Footer{}
 
 @Component({
+  selector: 'app-print-button',
+  template: `
+  <div class="fab-container">
+    <button class="fab" (click)="downloadResume()"><i class="bi bi-download"></i></button>
+    <button class="fab"(click)="printPage()"><i class="bi bi-printer"></i></button>
+  </div>
+`
+})
+export class PrintButton{
+  constructor(private titleService: Title) {}
+
+ resumeName(): string {
+  const now = new Date();
+
+  // Format date as YYYY-MM-DD
+  const year = now.getFullYear();
+  const month = (now.getMonth() + 1).toString().padStart(2, '0');
+  const day = now.getDate().toString().padStart(2, '0');
+
+  return `CaspianTylerResume_${year}-${month}-${day}.pdf`;
+}
+
+  downloadResume(){
+    const link = document.createElement('a');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', `CaspianTylerResume.pdf`);
+    link.setAttribute('download', this.resumeName());
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }  
+  
+  printPage() {
+    let prevName = this.titleService.getTitle()
+    this.titleService.setTitle(this.resumeName())
+    window.print();
+    this.titleService.setTitle(prevName)
+  
+}
+}
+
+
+@Component({
   selector: 'app-root',
-  imports: [Header, ProjectsNavBar, AboutMe, Employment, Projects, Footer],
+  imports: [Header, ProjectsNavBar, AboutMe, Employment, Projects, PrintButton, Footer],
   template: `
     <app-header/>
     <proj-nav-bar/>
@@ -296,6 +340,7 @@ export class Footer{}
       <employment/>
       <app-projects/>
     </div>
+    <app-print-button class="no-print"/>
     <app-footer class="no-print"></app-footer>
   `,
 })

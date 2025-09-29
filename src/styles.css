@@ -122,6 +122,7 @@
     }
 
     p{
+      text-decoration: none;
       margin-bottom: 0.25em;
       margin-top: 0.1em;
       margin-bottom: 0.1em;
@@ -153,6 +154,12 @@
       margin-bottom: 0.25em;
       margin-top: 0.1em;
       margin-bottom: 0.1em;
+    }
+
+    a{
+      text-decoration: none;
+      color: black;
+      font-weight:bold;
     }
 
   }
@@ -191,4 +198,31 @@
      margin: auto;
      max-width: 75%;
     }
-  }
+
+.fab-container {
+  position: fixed;      /* stays fixed on screen */
+  bottom: 20px;         /* distance from bottom */
+  right: 20px;          /* distance from right */
+  display: flex;
+  flex-direction: column; /* stack buttons vertically */
+  gap: 10px;              /* spacing between buttons */
+}
+
+.fab {
+  width: 2.1em;           /* width of button */
+  height: 2.1em;          /* height of button */
+  border-radius: 50%;    /* circular shape */
+  border: none;
+  background-color: #ff4d14;
+  color: #00464f;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+}
+
+}
