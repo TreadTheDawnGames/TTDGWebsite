@@ -312,7 +312,7 @@ export class PrintButton{
   downloadResume(){
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', `CaspianTylerResume.pdf`);
+    link.setAttribute('href', `/Resume/CaspianTylerResume.pdf`);
     link.setAttribute('download', this.resumeName());
     document.body.appendChild(link);
     link.click();
