@@ -130,7 +130,7 @@ export class ProjectsNavBar{
 
   <td>
     <div class="AboutMeDiv">
-      <h2>About Me</h2>
+      <h2>Summary</h2>
         <p>
           I am a game developer with a passion for problem solving and working
           with computers. I’ve released three games in Unity and Godot using C#,
@@ -154,7 +154,7 @@ export class AboutMe{}
     @for(job of employment; track job){
       <div style="break-inside: avoid;">
         <h3>
-          <a href="{{job.url}}" target="_blank" class="ProjectTitle bi bi-link">{{job.employer}}</a>
+          <a href="{{job.url}}" target="_blank" class="ProjectTitle bi bi-link">{{job.employer}} | {{createDate(job.start, job.end)}}</a>
         </h3>
 
         <h4><i [innerHTML]="parseMarkdown(job.position)"></i></h4>
@@ -172,6 +172,33 @@ export class AboutMe{}
 })
 export class Employment{
   employment = data.employment.history
+
+ createDate(s : string, e? : string): string {
+    let out : string = ""
+    let start : Date = new Date(s)
+
+      const year = start.getFullYear();
+      const month = (start.getMonth() + 1).toString().padStart(2, '0');
+    out = month +"/"+year
+    
+
+    if(e != null){
+            
+      const endYear = start.getFullYear();
+      const endMonth = (start.getMonth() + 1).toString().padStart(2, '0');
+      if(endYear == year && endMonth == month){
+        return out
+      }
+
+      out += " - " + endMonth +"/"+ endYear
+    }
+    else{
+      out += " - present"
+    }
+
+    return out
+  }
+
 
   fixHtml(s: string | Promise<string>): string {
     if(s instanceof Promise){
@@ -206,10 +233,8 @@ export class Employment{
 
   @for(project of projects; track project){
   <div style="break-inside: avoid;">
-    <h3>
-      <i class="bi bi-link">
-        <a href={{project.url}} target="_blank" class="ProjectTitle">{{project.title}} - {{project.start}}</a>
-      </i>
+    <h3 class="bi bi-link">
+        <a href={{project.url}} target="_blank" class="ProjectTitle">{{project.title}} | {{createDate(project.start, project.end)}}</a>
     </h3>
 
     <h4><i [innerHTML]="parseMarkdown(project.role)"></i></h4>
@@ -244,6 +269,32 @@ export class Projects {
 
     }
     return s
+  }
+
+  createDate(s : string, e? : string): string {
+    let out : string = ""
+    let start : Date = new Date(s)
+
+      const year = start.getFullYear();
+      const month = (start.getMonth() + 1).toString().padStart(2, '0');
+    out = month +"/"+year
+    
+
+    if(e != null){
+            
+      const endYear = start.getFullYear();
+      const endMonth = (start.getMonth() + 1).toString().padStart(2, '0');
+      if(endYear == year && endMonth == month){
+        return out
+      }
+
+      out += " - " + endMonth +"/"+ endYear
+    }
+    else{
+      out += " - present"
+    }
+
+    return out
   }
 
   fixHtml(s: string | Promise<string>): string {
