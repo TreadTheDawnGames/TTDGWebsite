@@ -171,15 +171,29 @@ export class AboutMe{}
 })
 export class Employment{
   employment = data.employment.history
-  
-  parseMarkdown(s: string) {
+
+  fixHtml(s: string | Promise<string>): string {
+    if(s instanceof Promise){
+      s.then(value => {
+        return this.fixHtml(value)
+      })
+      return ""
+    }
+
     s = s.replace("<p>", "")
     s = s.replace("</p>", "")
+    s = s.replace("<a href", "<a target=\"_blank\" href")
 
-    if(s.includes(" - "))
-      return marked.parse(s)
-    else
-      return marked.parseInline(s)
+    return s
+  }
+
+  parseMarkdown(s: string) {
+    if(s.includes(" - ")) {
+      return this.fixHtml(marked.parse(s))
+      
+    } else {
+      return this.fixHtml(marked.parseInline(s))
+    }
   }
 }
 
@@ -230,10 +244,29 @@ export class Projects {
     }
     return s
   }
-  parseMarkdown(s: string) {
+
+  fixHtml(s: string | Promise<string>): string {
+    if(s instanceof Promise){
+      s.then(value => {
+        return this.fixHtml(value)
+      })
+      return ""
+    }
+
     s = s.replace("<p>", "")
     s = s.replace("</p>", "")
-    return marked.parseInline(s)
+    s = s.replace("<a href", "<a target=\"_blank\" href")
+
+    return s
+  }
+
+  parseMarkdown(s: string) {
+    if(s.includes(" - ")) {
+      return this.fixHtml(marked.parse(s))
+      
+    } else {
+      return this.fixHtml(marked.parseInline(s))
+    }
   }
 
 }
