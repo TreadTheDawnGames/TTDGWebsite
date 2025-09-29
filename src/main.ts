@@ -9,19 +9,15 @@ import { compileClassDebugInfo } from '@angular/compiler';
   template: `
   <div class="no-print">
     <div class="title">
-      <table style="width: 100%">
+    
+      <table style="width: 100%;">
         <tr>
+          <td style="width: 1em"></td>
           <td class="tableImage">
             <div>
-              <a href="index.html"
-                ><img
-                  class="returntohome"
-                  src="Logos/TreadTheDawnLogoShipOnlyDuplicate-export.png"
-                  alt="TTDG logo"
-              /></a>
+              <a href="index.html"><img class="returntohome" src="Logos/TreadTheDawnLogoShipOnlyDuplicate-export.png" alt="TTDG logo"/></a>
             </div>
           </td>
-
           <td style="text-align: left">
             <div>
               <h1>Tread the Dawn Games</h1>
