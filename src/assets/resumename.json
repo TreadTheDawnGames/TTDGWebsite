@@ -50,8 +50,8 @@
         "url": "https://tworobots.com/",
         "position": "Balance and Testing Engineer",
         "summary": "Assist in balancing and testing Two Robots Unleashed, Two Robots Studios flagship title.",
-        "start": "2025-8",
-        "end": "2025-8",
+        "start": "2025-8-1",
+        "end": "2025-8-1",
         "keywords": [
           "Tester",
           "Design",
@@ -68,7 +68,7 @@
         "url": "https://github.com/TreadTheDawnGames",
         "position": "Game Developer",
         "summary": "Designed and developed games systems using Godot and Unity.",
-        "start": "2023-8",
+        "start": "2023-8-1",
         "keywords": [
           "Game Design",
           "Godot",
@@ -93,15 +93,15 @@
       "media": [],
       "role": "Creator, Game Designer, Systems Programmer",
       "summary": "Originally created in 96 hours, collaborated with two other developer/designers to create an arcade physics game about looping planets to gain as many points as you can using GDScript, Godot, and Open Source Art assets.",
-      "start": "2025-8",
-      "end": "2025-8",
+      "start": "2025-8-1",
+      "end": "2025-8-1",
       "description": "An entry to GMTK Game Jam 2024: Built to Scale.",
       "highlights": [
         "Scored top 16% in 'Enjoyment'",
         "Designed Gameplay",
-        "Implimented Shaders",
+        "Implemented Shaders",
         "Provided post-jam updates to polish",
-        "Optomized/refactored collaborators' code"
+        "Optimized/refactored collaborators' code"
       ],
       "keywords": [
         "Godot",
@@ -124,8 +124,8 @@
         "Created a launcher for easy updates.",
         "Ranked in top 50% of 7,597 entries."
       ],
-      "start": "2024-8",
-      "end": "2024-8",
+      "start": "2024-8-1",
+      "end": "2024-8-1",
       "keywords": [
         "Godot",
         "Game Jam",
@@ -139,11 +139,11 @@
       "url": "https://github.com/coolnether123/ChronosPointer",
       "media": [],
       "role": "Creator, Maintainer",
-      "start": "2025-1",
+      "start": "2025-1-1",
       "summary": "A mod to enhance the schedule panel with dynamic time indicators for improved colony management and time tracking.",
       "highlights": [
         "20,000+ current users/subscribers.",
-        "Implimented mod settings.",
+        "Implemented mod settings.",
         "Ensured compatibility with official DLC and major update 1.6."
       ],
       "keywords": [
@@ -157,7 +157,7 @@
       "url": "https://github.com/coolnether123/XenoPreview",
       "media": [],
       "role": "Maintainer",
-      "start": "2025-7",
+      "start": "2025-7-1",
       "summary": "A mod which shows a preview of your custom Xenotypes as you create them.",
       "highlights": [
         "Refactored the preview window to spawn in a way that works better within the RimWorld codebase.",
@@ -176,8 +176,8 @@
       "url": "https://github.com/ISOR3X/pawn-editor/pull/114",
       "media": [],
       "role": "Contributor",
-      "start": "2025-1",
-      "end": "2025-1",
+      "start": "2025-1-1",
+      "end": "2025-1-1",
       "summary": "Added Random Faction options when selecting a pawn's faction, each appearing when its context is relevant.",
       "highlights": [
         "Added functionality to select a random faction for a pawn based on various filters.",
@@ -196,8 +196,8 @@
       "url": "https://github.com/rwmt/Multiplayer/pull/688",
       "media": [],
       "role": "Contributor",
-      "start": "2025-9",
-      "end": "2025-9",
+      "start": "2025-9-1",
+      "end": "2025-9-1",
       "summary": "Added a window that shows current known issues to the user the first time they open the Server Explorer.",
       "highlights": [
         "Multi-language support.",
@@ -215,10 +215,10 @@
       "url": "https://treadthedawnexplorations.itch.io/the-cordova-expedition",
       "repo": "https://github.com/TreadTheDawnGames/GodotWildJam81-TheCordovaExpedition",
       "media": [],
-      "start": "2025-5",
-      "end": "2025-5",
+      "start": "2025-5-1",
+      "end": "2025-5-1",
       "role": "Creator, Game Designer, Systems Programmer",
-      "summary": "Originally created in 9 days, collaborated with four other developer/designers/artists to create an arcade a shoot-em-up sidescroller inspired by FTL using GDScript, Godot.",
+      "summary": "Originally created in 9 days, collaborated with four other developer/designers/artists to create an arcade shoot-em-up sidescroller inspired by FTL using GDScript, Godot.",
       "description": "An entry to Godot Wild Jam #81: Expedition.",
       "highlights": [
         "Designed and programmed the shop system",
@@ -237,12 +237,12 @@
       "url": "https://github.com/treadthedawngames/v2mc",
       "media": [],
       "role": "Sole Creator",
-      "start": "2025-10",
-      "end": "2025-3",
+      "start": "2025-10-1",
+      "end": "2025-3-1",
       "summary": "A tool which converts videos to the resources required to watch it in Minecraft 1.20.4. It is multiplayer friendly so you can watch with friends! Made with WinForms and C#.",
-      "description": "A Library with a Command Line utility and WinForms app using C#, FFMpeg/FFProbe, ImageMagick, and a blueprint of a Minecraft datapack to convert video files to resources allowing it to be watched as a movie in multiplayer Minecraft without mods.",
+      "description": "A Library with a Command Line utility and WinForms app using C#, FFMpeg/FFprobe, ImageMagick, and a blueprint of a Minecraft datapack to convert video files to resources allowing it to be watched as a movie in multiplayer Minecraft without mods.",
       "highlights": [
-        "Utilized FFMpeg/FFProbe and ImageMagick libraries to show a preview of output.",
+        "Utilized FFMpeg/FFprobe and ImageMagick libraries to show a preview of output.",
         "Audio in game automatically resyncs to video if server lag causes a desync.",
         "Used the I/O file system to automatically install the output to the proper place in the Minecraft directories."
       ],
@@ -262,8 +262,8 @@
       "url": "https://treadthedawnexplorations.itch.io/audio-maze",
       "media": [],
       "role": "Sole Creator",
-      "start": "2025-6",
-      "end": "2025-6",
+      "start": "2025-6-1",
+      "end": "2025-6-1",
       "summary": "Originally created in 4 hours, created an echolocation simulator using GDScript, Godot.",
       "description": "An entry to Godot Wild Jam #82: Unseen.",
       "highlights": [
@@ -282,8 +282,8 @@
       "url": "https://github.com/TreadTheDawnGames/RogueSouls",
       "media": [],
       "role": "Sole Creator",
-      "start": "2024-11",
-      "end": "2024-11",
+      "start": "2024-11-1",
+      "end": "2024-11-1",
       "summary": "Built on past experience in C# and Godot to create a prototype of a moddable, fixed-perspective, run-based dungeon crawler.",
       "description": "",
       "highlights": [
@@ -300,8 +300,8 @@
       "url": "https://github.com/TreadTheDawnGames/ScoundrelCardGame",
       "media": [],
       "role": "Sole Creator",
-      "start": "2025-3",
-      "end": "2025-8",
+      "start": "2025-3-1",
+      "end": "2025-8-1",
       "summary": "A Balatro-inspired game based on the solitaire card game, Scoundrel.",
       "highlights": [
         "Translated C# card system made for Babel or Bacon into GDScript.",
@@ -317,8 +317,8 @@
       "category": "Personal Project",
       "url": "https://github.com/TreadTheDawnGames/Rimguistics",
       "media": [],
-      "start": "2025-2",
-      "end": "2025-2",
+      "start": "2025-2-1",
+      "end": "2025-2-1",
       "role": "Creator",
       "summary": "A RimWorld mod to add languages to pawn's interactions.",
       "highlights": [
@@ -350,7 +350,7 @@
         "name": "Software",
         "level": "intermediate",
         "skills": [
-          "Gogot",
+          "Godot",
           "Unity",
           "Aseprite",
           "Gimp",

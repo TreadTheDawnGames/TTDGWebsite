@@ -130,8 +130,8 @@ export class ProjectsNavBar{
 
   <td>
     <div class="AboutMeDiv">
-      <h2>Summary</h2>
-        <p>
+      <h2 style="margin-bottom: 0px;">Summary</h2>
+        <p style="margin-top: 0px;">
           I am a game developer with a passion for problem solving and working
           with computers. I’ve released three games in Unity and Godot using C#,
           including multiplayer, 2D puzzle, and arcade style games. I have also
@@ -140,10 +140,38 @@ export class ProjectsNavBar{
           and Redout 2.
         </p>
       </div>
+      
+      <div class="AboutMeDiv">
+      <h2 style="margin-bottom: 0px;">Skills</h2>
+        <ul class="horizontalList">
+          @for(ss of skillsets; track ss){
+      <li class="barItem">
+      
+      <p style="margin-right: 2em; margin-top: 0px;"><b>{{ss.name}}</b>: {{createKeywords(ss.skills)}}</p>
+    </li>
+    }
+        </ul>
+    </div>
     </td>
 </table>  `
 })
-export class AboutMe{}
+export class AboutMe{
+
+  skillsets = data.skills.sets
+
+  createKeywords(keywords : string[]): string {
+    let s : string = ""
+
+    for(let i = 0; i < keywords.length; i++){
+      s += keywords[i]
+      if(i < keywords.length-1){
+        s+=", "
+      }
+
+    }
+    return s
+  }
+}
 
 @Component({
   selector: 'employment',
@@ -173,31 +201,32 @@ export class AboutMe{}
 export class Employment{
   employment = data.employment.history
 
- createDate(s : string, e? : string): string {
-    let out : string = ""
-    let start : Date = new Date(s)
+ createDate(s: string, e?: string): string {
+    let out: string = ""
+    let start: Date = new Date(s)
+    const year = start.getFullYear();
+    const month = (start.getMonth() + 1).toString().padStart(2, '0');
 
-      const year = start.getFullYear();
-      const month = (start.getMonth() + 1).toString().padStart(2, '0');
-    out = month +"/"+year
-    
+    out = month + "/" + year
+    if (e != null && e != undefined) {
+      console.log(e)
+      let end: Date = new Date(e)  // ✅ Create end Date object
+      console.log(end)
+      const endYear = end.getFullYear();  // ✅ Use end date
+      console.log(endYear)
+      const endMonth = (end.getMonth() + 1).toString().padStart(2, '0');  // ✅ Use end date
+        console.log(endMonth)
+        if (endYear == year && endMonth == month) {
+            return out
+        }
 
-    if(e != null){
-            
-      const endYear = start.getFullYear();
-      const endMonth = (start.getMonth() + 1).toString().padStart(2, '0');
-      if(endYear == year && endMonth == month){
-        return out
-      }
-
-      out += " - " + endMonth +"/"+ endYear
-    }
-    else{
-      out += " - present"
+        out += " - " + endMonth + "/" + endYear
+    } else {
+        out += " - present"
     }
 
     return out
-  }
+}
 
 
   fixHtml(s: string | Promise<string>): string {
@@ -386,8 +415,8 @@ export class PrintButton{
   template: `
     <app-header/>
     <proj-nav-bar/>
-    <app-about-me style=""/>
     <div class="centerOnPage">
+    <app-about-me style=""/>
       <employment/>
       <app-projects/>
     </div>

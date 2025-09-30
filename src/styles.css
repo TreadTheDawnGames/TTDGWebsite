@@ -93,6 +93,7 @@
       display: none !important;
     }
 
+
     .print-only,
     .print-only * {
       display: block;
@@ -180,9 +181,7 @@
     }
     .AboutMeDiv {
       margin: auto;
-      text-align: center;
       
-      width: 75%;
     }
     .ResumeDiv {
       margin: auto;
